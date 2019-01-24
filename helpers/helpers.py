@@ -9,7 +9,6 @@ def is_a_valid_image(url):
         return boolean
     """
     #Lame, i know. It could be improved with a proper complex Regex, but for simplicity i am just checking the length
-    print(url)
     if not url or len(url) < 10:
         return False
     white_list_image_extensions = ['png', 'jpg', 'jpeg', 'svg', 'svg+xml', 'gif', 'tiff', 'icon', 'x-icon']
@@ -19,7 +18,6 @@ def is_a_valid_image(url):
         if (res.status_code):
             content_type = res.headers.get('content-type')
             is_valid_image = content_type.split('/')[-1] in white_list_image_extensions
-            print(content_type)
         return is_valid_image
 
     except requests.exceptions.RequestException as e:
