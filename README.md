@@ -5,5 +5,13 @@
   requests <br />
   re <br />
   os <br />
+  
+  # To run the code
+  python main.py
+  
+  # To test the code
+  python test.py
+  
+ 
 
 
