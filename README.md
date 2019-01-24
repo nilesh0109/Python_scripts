@@ -7,6 +7,7 @@
   os <br />
   
   # To run the code
+  activate the virtual environment with all the dependencies installed and run <br>
   python main.py
   
   # To test the code
